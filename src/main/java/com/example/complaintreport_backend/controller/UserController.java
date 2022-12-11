@@ -18,7 +18,7 @@ public class UserController {
 
 
 
-    @PostMapping(path = "/userreg", consumes = "application/json", produces = "application/json")
+    @PostMapping(path = "/userregister", consumes = "application/json", produces = "application/json")
     public HashMap<String, String> Userregistration(@RequestBody UserDetails u){
         HashMap<String, String> str = new HashMap<>();
         List<UserDetails> result = (List<UserDetails>) udao.FindUser(u.getUsername());
